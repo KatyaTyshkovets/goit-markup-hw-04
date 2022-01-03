@@ -299,7 +299,7 @@ body {
 .text {
   margin-bottom: 28px;
 }
-.team-link {
+.team-icon {
   width: 44px;
   height: 44px;
   display: flex;
@@ -310,19 +310,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.comand-icon {
-  fill: #afb1b8;
-}
-.team-link:hover,
-.team-link:focus {
-  background-color: var(--btn-hov-foc-color);
-}
-.team-link:hover,
-.comand-icon,
-.team-link:focus,
-.comand-icon {
-  fill: var(--primary-white-color);
-}
+
 .name {
   font-weight: 500;
   font-size: 16px;
@@ -402,13 +390,22 @@ body {
 .footer .link:focus {
   color: var(--primary-white-color);
 }
+.footer-center {
+  display: flex;
+  width: calc(50% - 15px);
+  margin-left: 156px;
+}
+
 .footer-center-list {
   display: flex;
+  align-items: center;
 }
 .footer-link {
   width: 44px;
   height: 44px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .section-footer {
   font-weight: 700;
@@ -422,7 +419,22 @@ body {
 .footer-center-item + .footer-center-item {
   margin-left: 10px;
 }
-
+.footer-link:focus,
+.footer-link:hover {
+  background-color: var(--btn-hov-foc-color);
+}
+.footer-link:hover,
+.footer-icon,
+.footer-link:focus,
+.footer-icon {
+  fill: var(--primary-white-color);
+}
+.footer-center-item {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
 /* portfolio */
 
 .item-button {
