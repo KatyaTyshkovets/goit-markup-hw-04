@@ -135,12 +135,16 @@ body {
   height: 16px;
   margin-right: 10px;
 }
-.mail-icon:focus,
-.contact-icon:focus,
-.mail-icon:hover,
-.contact-icon:hover {
-  fill: var(--accent-color);
-  cursor: pointer;
+.contact-link:focus,
+.contact-link:hover {
+  color: #2196f3;
+}
+.contact-link {
+  color: #757575;
+}
+.mail-icon,
+.contact-icon {
+  fill: currentColor;
 }
 /* Герой */
 
@@ -223,15 +227,21 @@ body {
   line-height: 1.14;
 }
 
-.feature-icon {
+.feature-iteam {
   height: 120px;
   width: 270px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   background: #f5f4fa;
   margin-bottom: 30px;
 }
-
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .title {
   margin-bottom: 10px;
 }
@@ -299,12 +309,23 @@ body {
 .text {
   margin-bottom: 28px;
 }
-.team-icon {
+.team-link {
   width: 44px;
   height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--primary-white-color);
+  border-radius: 50%;
+  color: #afb1b8;
+}
+.comand-icon {
+  fill: currentColor;
+}
+.team-link:focus,
+.team-link:hover {
+  background-color: var(--btn-hov-foc-color);
+  color: var(--primary-white-color);
 }
 .comand-list {
   display: flex;
@@ -337,22 +358,41 @@ body {
 }
 
 /* клиенты*/
+
 .client-list {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.client-icon {
-  display: flex;
+.client-link {
   width: 170px;
   height: 92px;
+  display: flex;
+  justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   box-sizing: border-box;
   margin-right: 30px;
 }
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+.client-icon {
+  fill: currentColor;
+}
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+  border: 1px solid #2196f3;
+}
 .section-client {
   margin-bottom: 50px;
 }
+
 /* Футер */
 
 .page-footer {
