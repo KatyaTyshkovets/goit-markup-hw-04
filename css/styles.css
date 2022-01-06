@@ -149,7 +149,8 @@ body {
   align-items: center;
 }
 .header-item .link {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 /* Герой */
 
@@ -320,13 +321,12 @@ body {
   background: var(--primary-white-color);
   border-radius: 50%;
   color: #afb1b8;
+  margin-right: 10px;
 }
 .comand-icon {
   fill: currentColor;
 }
-.team-icon:last-child {
-  margin-right: 10px;
-}
+
 .team-link:focus,
 .team-link:hover {
   background-color: var(--btn-hov-foc-color);
@@ -436,7 +436,7 @@ body {
   color: var(--primary-white-color);
 }
 .footer-center {
-  margin-left: 156px;
+  margin-left: 70px;
 }
 .page-footer > .container {
   display: flex;
