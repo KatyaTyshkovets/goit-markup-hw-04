@@ -436,8 +436,6 @@ body {
   color: var(--primary-white-color);
 }
 .footer-center {
-  display: flex;
-  width: calc(50% - 15px);
   margin-left: 156px;
 }
 .page-footer > .container {
@@ -447,13 +445,14 @@ body {
 .footer-center-list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 .footer-link {
   width: 44px;
   height: 44px;
-  display: block;
-  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .section-footer {
   font-weight: 700;
@@ -461,6 +460,8 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  display: flex;
+  align-items: center;
 
   margin-bottom: 20px;
 }
@@ -483,6 +484,7 @@ body {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
+
 /* portfolio */
 
 .item-button {
